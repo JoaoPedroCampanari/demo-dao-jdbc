@@ -22,9 +22,15 @@ public class Program {
 
         System.out.println("\n=== TEST 2: seller findByDepartment =====");
 
-        List<Seller> list = sellerDao.findByDepartment(new Department(2,null));
+        List<Seller> list = sellerDao.findByDepartment(new Department(2,"dasdsad"));
 
         list.forEach(System.out::println);
+
+        System.out.println("\n=== TEST 3: seller findAll =====");
+
+        List<Seller> listAll = sellerDao.findAll();
+
+        listAll.forEach(System.out::println);
 
     }
 }
